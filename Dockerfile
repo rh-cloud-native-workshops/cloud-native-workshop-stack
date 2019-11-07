@@ -19,6 +19,8 @@ RUN mkdir -p ${BIN_DIR} && mkdir -p ${STAGE_DIR} && cd ${STAGE_DIR} && \
     
 RUN rm -rf ${STAGE_DIR}
 
+ADD ./etc/settings.xml ${MAVEN_HOME}/conf/settings.xml
+
 USER 10001
 ENV HOME=/home/user
 WORKDIR /projects
