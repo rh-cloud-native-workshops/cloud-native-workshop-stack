@@ -11,7 +11,7 @@ RUN mkdir -p ${BIN_DIR} && mkdir -p ${STAGE_DIR} && cd ${STAGE_DIR} && \
     tar xvzf openshift-client-linux-${OC_VERSION}.tar.gz && \
     mv kubectl oc ${BIN_DIR} && \
     curl -OL https://github.com/knative/client/releases/download/v${KNATIVE_CLI_VERSION}/kn-linux-amd64 && \
-    chmod u+x kn-linux-amd64 && \
+    chmod a+x kn-linux-amd64 && \
     mv kn-linux-amd64 ${BIN_DIR}/kn && \
     curl -OL https://github.com/tektoncd/cli/releases/download/v${TEKTON_CLI_VERSION}/tkn_${TEKTON_CLI_VERSION}_linux_x86_64.tar.gz && \
     tar xvzf tkn_${TEKTON_CLI_VERSION}_linux_x86_64.tar.gz && \
