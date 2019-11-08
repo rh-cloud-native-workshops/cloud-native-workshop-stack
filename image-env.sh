@@ -1,5 +1,6 @@
 #!/bin/sh
 
+export BUILD_NUM=2
 export REGISTRY=quay.io
 export REGISTRY_USER_ID=cvicensa
 export IMAGE_NAME=cnw-che-stack
